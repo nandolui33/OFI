@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  xmlns:build="http://schemas.microsoft.com/developer/appx/2015/build"
+  IgnorableNamespaces="uap mp build">
+
+  <Identity
+    Name="559b7d7f-ddfd-6ada-307f-b6ea422f4fcf"
+    Version="1.0.0.0"
+    Publisher="CN=user" />
+
+  <mp:PhoneIdentity PhoneProductId="559b7d7f-ddfd-6ada-307f-b6ea422f4fcf" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  
+  <build:Metadata>
+    <build:Item Name ="ManifoldJSVersion" Value ="0.4.0" />
+    <build:Item Name ="GeneratedFrom" Value ="Website Wizard" />
+    <build:Item Name ="GenerationDate" Value ="2015-08-20 09:14:40 Z" />
+  </build:Metadata>
+
+  <Properties>
+    <DisplayName>OfiVirtualAgua</DisplayName>
+    <PublisherDisplayName>user</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
+
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+
+  <Applications>
+    <Application
+      Id="OfiVirtualAgua"
+      StartPage="https://www.acuamaonline.com/mobile/?homescreen=1">
+
+      <uap:VisualElements
+        DisplayName="OfiVirtualAgua"
+        Description="OfiVirtualAgua"
+        BackgroundColor="#464646"
+        Square150x150Logo="images\logo.png"
+        Square44x44Logo="images\smalllogo.png">
+
+        <uap:SplashScreen Image="images\splashscreen.png" />
+
+        <uap:InitialRotationPreference>
+          <uap:Rotation Preference="landscape" />
+        </uap:InitialRotationPreference>
+      </uap:VisualElements>
+      
+      <uap:ApplicationContentUriRules>
+        <uap:Rule Type="include" WindowsRuntimeAccess="none" Match="https://www.acuamaonline.com/" />
+      </uap:ApplicationContentUriRules>
+    </Application>
+  </Applications>
+
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+
+</Package>

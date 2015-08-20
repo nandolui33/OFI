@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.acuamaonline.www" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <preference name="loglevel" value="DEBUG" />
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="HostedWebApp">
+        <param name="android-package" value="com.manifoldjs.hostedwebapp.HostedWebApp" />
+        <param name="onload" value="true" />
+    </feature>
+    <allow-intent href="market:*" />
+    <icon density="hdpi" src="/imagenes/icon/android/drawable-hdpi/launcher-icon_ic_launcher.png" />
+    <icon density="ldpi" src="/imagenes/icon/android/drawable-ldpi/launcher-icon_ic_launcher.png" />
+    <icon density="xhdpi" src="/imagenes/icon/android/drawable-xhdpi/launcher-icon_ic_launcher.png" />
+    <icon density="xxhdpi" src="/imagenes/icon/android/drawable-xxhdpi/launcher-icon_ic_launcher.png" />
+    <icon density="xxxhdpi" src="/imagenes/icon/android/drawable-xxxhdpi/launcher-icon_ic_launcher.png" />
+    <icon density="mdpi" src="/imagenes/icon/watchkit/AppIcon.appiconset/Icon-24@2x.png" />
+    <access hap-rule="yes" origin="https://www.acuamaonline.com/mobile/*" />
+    <allow-navigation hap-rule="yes" href="https://www.acuamaonline.com/mobile/*" />
+    <name>OfiVirtualAgua</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="https://www.acuamaonline.com/mobile/?homescreen=1" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <preference name="Orientation" value="landscape" />
+    <preference name="Fullscreen" value="false" />
+</widget>

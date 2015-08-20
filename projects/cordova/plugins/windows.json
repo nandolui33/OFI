@@ -1,0 +1,22 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-hostedwebapp": {
+            "PACKAGE_NAME": "OfiVirtualAgua"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "OfiVirtualAgua"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "OfiVirtualAgua"
+        }
+    }
+}

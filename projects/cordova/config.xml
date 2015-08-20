@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.acuamaonline.www" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>OfiVirtualAgua</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="https://www.acuamaonline.com/mobile/?homescreen=1" />
+    <plugin name="cordova-plugin-whitelist" version="1" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <icon density="hdpi" src="/imagenes/icon/android/drawable-hdpi/launcher-icon_ic_launcher.png" />
+        <icon density="ldpi" src="/imagenes/icon/android/drawable-ldpi/launcher-icon_ic_launcher.png" />
+        <icon density="mdpi" src="/imagenes/icon/watchkit/AppIcon.appiconset/Icon-24@2x.png" />
+        <icon density="xhdpi" src="/imagenes/icon/android/drawable-xhdpi/launcher-icon_ic_launcher.png" />
+        <icon density="xxhdpi" src="/imagenes/icon/android/drawable-xxhdpi/launcher-icon_ic_launcher.png" />
+        <icon density="xxxhdpi" src="/imagenes/icon/android/drawable-xxxhdpi/launcher-icon_ic_launcher.png" />
+        <icon density="mdpi" src="/imagenes/icon/watchkit/AppIcon.appiconset/Icon-24@2x.png" />
+        <access hap-rule="yes" origin="https://www.acuamaonline.com/mobile/*" />
+        <allow-navigation hap-rule="yes" href="https://www.acuamaonline.com/mobile/*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+        <icon height="72" src="/imagenes/icon/android/drawable-hdpi/launcher-icon_ic_launcher.png" width="72" />
+        <icon height="144" src="/imagenes/icon/android/drawable-xxhdpi/launcher-icon_ic_launcher.png" width="144" />
+        <icon height="58" src="/imagenes/icon/watchkit/AppIcon.appiconset/Icon-29@2x.png" width="58" />
+        <icon height="80" src="/imagenes/icon/watchkit/AppIcon.appiconset/Icon-40@2x.png" width="80" />
+        <access hap-rule="yes" origin="https://www.acuamaonline.com/mobile/*" />
+    </platform>
+    <preference name="Orientation" value="landscape" />
+    <preference name="Fullscreen" value="false" />
+    <platform name="windows">
+    </platform>
+    <platform name="wp8">
+    </platform>
+</widget>

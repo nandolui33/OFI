@@ -1,0 +1,8 @@
+{
+    "name": "OfiVirtualAgua",
+    "description": "Content from https://www.acuamaonline.com/mobile/?homescreen=1",
+    "launch_path": "/mobile/",
+    "icons": {
+        "48": "Icon-24@2x.png"
+    }
+}
